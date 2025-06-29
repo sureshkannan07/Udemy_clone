@@ -56,6 +56,7 @@ body{
 .mylearning{
     position: relative;
     cursor: pointer;
+    
 }
 
 .mylearning__popup{
@@ -66,12 +67,17 @@ body{
     left: 0px;
     right: 0px;
     padding: 10px;
-   display: none;
+    display: none;
 
+}
+
+.mylearning:hover {
+    color:gray;
 }
 
 .mylearning:hover .mylearning__popup{
     display: block;
+    color: black;
 }
 
 .categories{
