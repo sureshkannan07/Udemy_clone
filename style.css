@@ -14,6 +14,10 @@ body{
     border-bottom:solid black 1px;
     gap: 10px;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 
 .novbar_s1__title{
@@ -34,6 +38,7 @@ body{
     border: none;
     width: 100%;
     font-size: 16px;
+    background: transparent;
 }
 
 .novbar_s2 input:focus{
@@ -44,6 +49,29 @@ body{
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+/*Mylearning__Popup*/
+
+.mylearning{
+    position: relative;
+    cursor: pointer;
+}
+
+.mylearning__popup{
+    position: absolute;
+    border: solid black 1px;
+    background-color: white;
+    top: 150%;
+    left: 0px;
+    right: 0px;
+    padding: 10px;
+   display: none;
+
+}
+
+.mylearning:hover .mylearning__popup{
+    display: block;
 }
 
 .categories{
@@ -59,9 +87,22 @@ body{
     color: white;
     border-radius: 30px;
 }
+.sale_image{
+    position:relative;
+}
 
 .sale_image img{
     width: 100%;
+}
+
+.sale__image__offer{
+    width: 30%;
+    border: solid black 2px;
+    background-color: #D2C9FE;
+    padding: 2%;
+    position: absolute;
+    top: 20%;
+    left: 5%;
 }
 
 .recommended{
